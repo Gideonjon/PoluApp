@@ -1,86 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".OnboardingScreen">
 
 
-  <TextView
-      android:id="@+id/textView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="97dp"
-      android:fontFamily="@font/font"
-      android:text="P"
-      android:textColor="@color/brand_color"
-      android:layout_marginTop="32dp"
-      android:textSize="85sp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-  <TextView
-      android:id="@+id/textView2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:fontFamily="@font/font"
-      android:text="lu"
-      android:textColor="@color/brand_color"
-      android:textSize="85sp"
-      app:layout_constraintBottom_toBottomOf="@+id/textView"
-      app:layout_constraintStart_toEndOf="@+id/imageView2"
-      app:layout_constraintTop_toTopOf="@+id/textView" />
-
-  <ImageView
-      android:id="@+id/imageView2"
-      android:layout_width="45dp"
-      android:layout_height="45dp"
-      android:src="@drawable/logo"
-      android:tint="@color/brand_color"
-      app:layout_constraintBottom_toBottomOf="@+id/textView"
-      app:layout_constraintStart_toEndOf="@+id/textView"
-      app:layout_constraintTop_toTopOf="@+id/textView"
-      tools:ignore="UseAppTint" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        app:cardBackgroundColor="@color/brand_color"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
 
-  <androidx.constraintlayout.widget.ConstraintLayout
-      android:id="@+id/constraint"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="@drawable/onboarding"
-      android:layout_marginTop="32dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      android:layout_marginHorizontal="32dp"
-      app:layout_constraintTop_toBottomOf="@id/textView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-    <com.codebyashish.autoimageslider.AutoImageSlider
-        android:id="@+id/imageSlider"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:ais_time_interval="900"
-        app:ais_dots_visible="false"
-        app:ais_auto_sliding="true"
+            <com.codebyashish.autoimageslider.AutoImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:ais_auto_sliding="true"
+                app:ais_dots_visible="false"
+                app:ais_time_interval="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/txtlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/txt"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        app:tint="@color/brand_color" />
 
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/signUp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="22dp"
+      android:layout_marginTop="27dp"
+      android:background="@drawable/button"
+      android:elevation="0dp"
+      android:text="Sign up as a new user"
+      android:textSize="12sp"
+      android:textColor="@color/white"
+      android:textAllCaps="false"
+      android:fontFamily="@font/atleticsmedium"
+      app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+      app:layout_constraintTop_toBottomOf="@id/imageView4"
+      tools:layout_editor_absoluteX="22dp" />
 
-
-  </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
+  <TextView
+      android:id="@+id/appCompatButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="22dp"
+      android:layout_marginTop="44dp"
+      android:text="Login in to existing account"
+      android:textSize="17sp"
+      android:fontFamily="@font/atleticsmedium"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/imageView4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

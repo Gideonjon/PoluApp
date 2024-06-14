@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.codebyashish.autoimageslider.Enums.ImageActionTypes
+import com.codebyashish.autoimageslider.Enums.ImageAnimationTypes
 import com.codebyashish.autoimageslider.Enums.ImageScaleType
 import com.codebyashish.autoimageslider.Interfaces.ItemsListener
 import com.codebyashish.autoimageslider.Models.ImageSlidesModel
@@ -41,7 +42,7 @@ class OnboardingScreen : Fragment(), ItemsListener {
         autoImageSlider.setImageList(autoImageList, ImageScaleType.FIT)
 
         // set any default animation or custom animation (setSlideAnimation(ImageAnimationTypes.ZOOM_IN))
-        autoImageSlider.setDefaultAnimation()
+        autoImageSlider.setSlideAnimation(ImageAnimationTypes.DEPTH_SLIDE)
 
         // handle click event on item click
         autoImageSlider.onItemClickListener(listener)
