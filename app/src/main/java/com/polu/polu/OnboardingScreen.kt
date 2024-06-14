@@ -34,9 +34,11 @@ class OnboardingScreen : Fragment(), ItemsListener {
         val autoImageSlider = binding.imageSlider
 
         // add some imagees or titles (text) inside the imagesArrayList
-        autoImageList.add(ImageSlidesModel(R.drawable.imgone, ""))
+        autoImageList.add(ImageSlidesModel(R.drawable.imageone, ""))
         autoImageList.add(ImageSlidesModel(R.drawable.imagetwo, ""))
         autoImageList.add(ImageSlidesModel(R.drawable.imagethree, ""))
+        autoImageList.add(ImageSlidesModel(R.drawable.imagefour, ""))
+        autoImageList.add(ImageSlidesModel(R.drawable.imagefive, ""))
 
         // set the added images inside the AutoImageSlider
         autoImageSlider.setImageList(autoImageList, ImageScaleType.FIT)
