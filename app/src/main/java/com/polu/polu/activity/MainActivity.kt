@@ -1,7 +1,8 @@
-package com.polu.polu
+package com.polu.polu.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.polu.polu.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

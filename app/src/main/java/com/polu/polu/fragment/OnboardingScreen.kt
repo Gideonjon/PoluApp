@@ -1,4 +1,4 @@
-package com.polu.polu
+package com.polu.polu.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import com.codebyashish.autoimageslider.Enums.ImageAnimationTypes
 import com.codebyashish.autoimageslider.Enums.ImageScaleType
 import com.codebyashish.autoimageslider.Interfaces.ItemsListener
 import com.codebyashish.autoimageslider.Models.ImageSlidesModel
+import com.polu.polu.R
 import com.polu.polu.databinding.FragmentOnboardingScreenBinding
 
 

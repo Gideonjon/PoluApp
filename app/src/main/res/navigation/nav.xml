@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreen"
-        android:name="com.polu.polu.SplashScreen"
+        android:name="com.polu.polu.fragment.SplashScreen"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
@@ -16,17 +16,21 @@
     </fragment>
     <fragment
         android:id="@+id/logoPresentation"
-        android:name="com.polu.polu.LogoPresentation"
+        android:name="com.polu.polu.fragment.LogoPresentation"
         android:label="fragment_logo_presentation"
         tools:layout="@layout/fragment_logo_presentation" >
         <action
             android:id="@+id/action_logoPresentation_to_onboardingScreen"
             app:destination="@id/onboardingScreen"
-            app:exitAnim="@anim/zoom_out" />
+            app:exitAnim="@anim/zoom_in" />
     </fragment>
     <fragment
         android:id="@+id/onboardingScreen"
-        android:name="com.polu.polu.OnboardingScreen"
+        android:name="com.polu.polu.fragment.OnboardingScreen"
         android:label="fragment_onboarding_screen"
         tools:layout="@layout/fragment_onboarding_screen" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.polu.polu.fragment.HomeFragment"
+        android:label="HomeFragment" />
 </navigation>
