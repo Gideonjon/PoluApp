@@ -1,85 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView9_"
         android:layout_width="22dp"
         android:layout_height="22dp"
         android:layout_marginTop="17dp"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:srcCompat="@drawable/verified" />
+        app:layout_constraintStart_toStartOf="@+id/textView13_"
+        app:layout_constraintTop_toBottomOf="@+id/textView13_"
+        app:srcCompat="@drawable/wallet" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView10_"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginTop="17dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:srcCompat="@drawable/location" />
+        app:layout_constraintStart_toStartOf="@+id/imageView9_"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9_"
+        app:srcCompat="@drawable/referral" />
+
+    <ImageView
+        android:id="@+id/imageView10_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView9_"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10_"
+        app:srcCompat="@drawable/gift" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView13_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IDENTITY"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/atleticsmedium"
+        android:text="FINANCES AND REWARD"
         android:textColor="#70000000"
         android:textSize="11sp"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView14_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Profile"
-        android:textSize="13sp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/atleticsmedium"
-
         android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        android:fontFamily="@font/atleticsmedium"
+        android:text="Wallet"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9_"
+        app:layout_constraintStart_toEndOf="@+id/imageView9_"
+        app:layout_constraintTop_toTopOf="@+id/imageView9_" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView15_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/atleticsmedium"
-        android:text="Address"
+        android:text="Referral"
         android:textColor="@color/black"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10_"
+        app:layout_constraintStart_toStartOf="@+id/textView14_"
+        app:layout_constraintTop_toTopOf="@+id/imageView10_" />
 
-    <ImageView
-        android:id="@+id/imageView11"
+    <TextView
+        android:id="@+id/textView15_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/atleticsmedium"
+        android:text="Redeem Codes / Gift Cards"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10_1"
+        app:layout_constraintStart_toStartOf="@+id/textView14_"
+        app:layout_constraintTop_toTopOf="@+id/imageView10_1" />
+
+    <ImageView
+        android:id="@+id/imageView11_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="17dp"
-        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9_"
         app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
         app:tint="#A2A2A2" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imageView11_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:tint="#A2A2A2"
-        app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10_1"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+        app:tint="#A2A2A2" />
+
+    <ImageView
+        android:id="@+id/imageView12_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10_"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11_"
+        app:layout_constraintTop_toTopOf="@+id/imageView10_"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+        app:tint="#A2A2A2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

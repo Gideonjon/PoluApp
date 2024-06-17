@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="brand_color">#9F79FF</color>
     <color name="menu_hint">#B8B8B8</color>
+    <color name="red">#FF0000</color>
 </resources>
