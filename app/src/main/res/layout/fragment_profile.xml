@@ -271,6 +271,21 @@
         app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
         app:tint="#A2A2A2" />
 
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/logoutbtnn"
+        android:elevation="0dp"
+        android:fontFamily="@font/atleticsmedium"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView10_1"
+        tools:layout_editor_absoluteX="22dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
