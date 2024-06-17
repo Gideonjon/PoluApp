@@ -82,10 +82,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:textColor="@color/black"
             android:fontFamily="@font/atleticsmedium"
-            android:textSize="13sp"
             android:text="Finalising Print"
+            android:textColor="@color/black"
+            android:textSize="13sp"
             app:layout_constraintStart_toStartOf="@+id/market_name"
             app:layout_constraintTop_toBottomOf="@+id/market_name" />
 
@@ -93,13 +93,34 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="40 min left"
             android:fontFamily="@font/atleticsmedium"
+            android:text="40 min left"
             android:textColor="@color/black"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView11"
             app:layout_constraintEnd_toEndOf="@+id/img"
             app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/progressbar"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="5dp"
+            android:progress="1"
+            android:progressDrawable="@drawable/curvedprogressbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
