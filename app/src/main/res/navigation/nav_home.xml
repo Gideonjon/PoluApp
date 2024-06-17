@@ -32,17 +32,17 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/toprintFagment"
-        android:name="com.polu.polu.ToprintFagment"
+        android:name="com.polu.polu.fragment.ToprintFagment"
         android:label="fragment_toprint_fagment"
         tools:layout="@layout/fragment_toprint_fagment" />
     <fragment
         android:id="@+id/ongoingFragment"
-        android:name="com.polu.polu.OngoingFragment"
+        android:name="com.polu.polu.fragment.OngoingFragment"
         android:label="fragment_ongoing"
         tools:layout="@layout/fragment_ongoing" />
     <fragment
         android:id="@+id/completedFragment"
-        android:name="com.polu.polu.CompletedFragment"
+        android:name="com.polu.polu.fragment.CompletedFragment"
         android:label="fragment_completed"
         tools:layout="@layout/fragment_completed" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.polu.polu
+package com.polu.polu.fragment
 
 import android.os.Bundle
 import android.os.Handler
@@ -38,12 +38,12 @@ class OngoingFragment : Fragment() {
     private fun progressKickstart() {
 
         Thread(Runnable {
-            while (progressStatus < 100) {
+            while (progressStatus < 62) {
                 // update progress status
                 progressStatus += 1
 
                 // sleep the thread for 100 milliseconds
-                Thread.sleep(100)
+                Thread.sleep(1000)
 
                 // update the progress bar
                 handler.post {

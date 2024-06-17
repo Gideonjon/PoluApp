@@ -29,8 +29,4 @@
         android:name="com.polu.polu.fragment.OnboardingScreen"
         android:label="fragment_onboarding_screen"
         tools:layout="@layout/fragment_onboarding_screen" />
-    <fragment
-        android:id="@+id/homeFragment2"
-        android:name="com.polu.polu.fragment.HomeFragment"
-        android:label="HomeFragment" />
 </navigation>
