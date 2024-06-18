@@ -1,5 +1,6 @@
 package com.polu.polu.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.codebyashish.autoimageslider.Enums.ImageScaleType
 import com.codebyashish.autoimageslider.Interfaces.ItemsListener
 import com.codebyashish.autoimageslider.Models.ImageSlidesModel
 import com.polu.polu.R
+import com.polu.polu.activity.HomeActivity
 import com.polu.polu.databinding.FragmentOnboardingScreenBinding
 
 
@@ -49,6 +51,12 @@ class OnboardingScreen : Fragment(), ItemsListener {
 
         // handle click event on item click
         autoImageSlider.onItemClickListener(listener)
+
+
+        binding.appCompatButton.setOnClickListener {
+            val intent = Intent(requireContext(), HomeActivity::class.java)
+            activity?.startActivity(intent)
+        }
 
 
 
